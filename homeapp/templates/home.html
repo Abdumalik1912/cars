@@ -5,7 +5,7 @@
     <title>{% block title %}Home page{% endblock %}</title>
 </head>
 <body>
-    <table>
+    <table style="border: 1px solid black">
         <thead>
             <th>Name</th>
             <th>Brand</th>
@@ -14,7 +14,7 @@
         </thead>
         <tbody>
             {% for car in cars %}
-            <tr>
+            <tr style="border: 1px solid black">
                 <td>{{car.name}}</td>
                 <td>{{car.brand}}</td>
                 <td>{{car.company}}</td>
